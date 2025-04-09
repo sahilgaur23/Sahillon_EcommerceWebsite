@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react
 import './styles/main.css'
 import SignInSignUp from './componenets/sign_in'
 import Wishlist from './componenets/wishlist'
+import image from '/images/logo.png'
 
 function Header() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ function Header() {
     <header>
       {/* Logo */}
       <div className="logo_container">
-        <Link to="/"><img className="logo_home" src="/images/logo.png" alt="Myntra Home" /></Link>
+        <Link to="/"><img className="logo_home" src={image} alt="Sahil Home" /></Link>
       </div>
       <div className="nav_bar">
         <Link to="#">Men</Link>
